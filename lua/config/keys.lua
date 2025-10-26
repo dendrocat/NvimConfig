@@ -1,11 +1,13 @@
 --- Terminal
-vim.keymap.set('n', '<leader>t', ':tabe | terminal<CR>i', { desc = 'Open terminal' })
-
+vim.keymap.set('n', '<leader>t', ':tabnew<CR>:terminal<CR>i', { desc = 'Open terminal' })
+vim.keymap.set('t', '<C-n>', "<C-\\><C-n>", { desc = 'Exit terminal' })
 
 --- Diagnostic
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Show diagnostic' })
-vim.keymap.set('n', '[d', function() vim.diagnostic.goto_prev() end, { desc = 'Prev diagnostic' })
-vim.keymap.set('n', ']d', function() vim.diagnostic.goto_next() end, { desc = 'Next diagnostic' })
+
+local jump = function(cnt) vim.diagnostic.jump({ count = cnt, float = true }) end
+vim.keymap.set('n', '[d', function() jump(-1) end, { desc = 'Prev diagnostic' })
+vim.keymap.set('n', ']d', function() jump(1) end, { desc = 'Next diagnostic' })
 
 
 --- Format
