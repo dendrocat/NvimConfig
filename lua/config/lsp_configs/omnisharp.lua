@@ -1,8 +1,5 @@
 return {
-	cmd = {
-		"dotnet",
-		vim.fn.stdpath "data" .. "\\mason\\packages\\omnisharp\\libexec\\OmniSharp.dll",
-	},
+	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
 	settings = {
 		FormattingOptions = {
 			EnableEditorConfigSupport = false,

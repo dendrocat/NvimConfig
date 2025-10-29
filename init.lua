@@ -8,7 +8,6 @@ require("config.theme")
 require("config.cmp")
 require("config.lsp")
 require("config.keys")
-require("config.tree")
 require("config.telescope")
 require("config.lualine")
 
@@ -24,4 +23,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 --- Open tree
-vim.cmd("NvimTreeOpen")
+require("config.tree")

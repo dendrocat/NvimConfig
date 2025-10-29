@@ -19,7 +19,10 @@ require("nvim-tree").setup({
 	filters = {
 		dotfiles = false,
 		git_ignored = false,
-		custom = { "^.git$" },
+		custom = {
+			"^.git$",
+			"\\.meta$",
+		},
 	},
 })
 
@@ -36,3 +39,4 @@ vim.keymap.set('n', '<leader>e', function()
 		api.tree.open()
 	end
 end, { desc = 'Tree toggle' })
+api.tree.open()
