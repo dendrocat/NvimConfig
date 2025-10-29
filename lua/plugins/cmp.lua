@@ -5,7 +5,8 @@ return {
 			ensure_installed = {
 				"clangd", -- C++
 				"pyright", -- Python
-				"lua_ls" -- Lua
+				"lua_ls", -- Lua
+				"omnisharp" -- C#
 			}
 		}
 	},
