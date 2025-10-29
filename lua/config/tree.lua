@@ -39,4 +39,3 @@ vim.keymap.set('n', '<leader>e', function()
 		api.tree.open()
 	end
 end, { desc = 'Tree toggle' })
-api.tree.open()

@@ -8,8 +8,10 @@ require("config.theme")
 require("config.cmp")
 require("config.lsp")
 require("config.keys")
+require("config.tree")
 require("config.telescope")
 require("config.lualine")
+require("config.treesitter")
 
 --- Tabs
 vim.opt.tabstop = 4
@@ -23,4 +25,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 --- Open tree
-require("config.tree")
+vim.cmd [[NvimTreeOpen]]
