@@ -1,10 +1,12 @@
-local theme = require('nightfox')
-theme.setup({
-	options = {
-		styles = {
-			keywords = 'italic',
-			types = 'italic, bold',
-		}
-	}
-})
-vim.cmd [[colorscheme nightfox ]]
+local theme = require('catppuccin')
+local config = {}
+config.auto_integrations = true
+
+config.styles = {
+	keywords = { 'italic' },
+	types = { 'italic' },
+}
+
+theme.setup(config)
+
+vim.cmd [[colorscheme catppuccin-macchiato ]]

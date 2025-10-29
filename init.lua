@@ -10,8 +10,9 @@ require("config.lsp")
 require("config.keys")
 require("config.tree")
 require("config.telescope")
-require("config.lualine")
 require("config.treesitter")
+require("config.indent_blankline")
+require("config.statusline")
 
 --- Tabs
 vim.opt.tabstop = 4
