@@ -4,7 +4,6 @@ config.auto_integrations = true
 
 config.styles = {
 	keywords = { 'italic' },
-	types = { 'italic' },
 }
 
 theme.setup(config)
