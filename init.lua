@@ -14,6 +14,7 @@ require("config.treesitter")
 require("config.indent_blankline")
 require("config.statusline")
 require("config.gitsigns")
+require("config.vsnip")
 
 -- Tabs
 vim.opt.tabstop = 4

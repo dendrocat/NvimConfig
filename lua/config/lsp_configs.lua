@@ -1,7 +1,4 @@
 local config = {}
-config.clangd = {}
-config.pyright = {}
-
 config.lua_ls = {
 	settings = {
 		Lua = {

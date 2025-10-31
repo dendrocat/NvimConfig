@@ -2,7 +2,7 @@ local gitsigns = require('gitsigns')
 
 local config = {}
 
-config.signs = {
+local signs = {
 	add          = { text = '+' },
 	change       = { text = '~' },
 	delete       = { text = '_' },
@@ -10,14 +10,9 @@ config.signs = {
 	changedelete = { text = '~' },
 	untracked    = { text = '┆' },
 }
-config.signs_staged = {
-	add          = { text = '+' },
-	change       = { text = '~' },
-	delete       = { text = '_' },
-	topdelete    = { text = '‾' },
-	changedelete = { text = '~' },
-	untracked    = { text = '┆' },
-}
+
+config.signs = signs
+config.signs_staged = signs
 config.signs_staged_enable = true
 config.watch_gitdir = {
 	follow_files = true
@@ -34,7 +29,7 @@ config.current_line_blame_opts = {
 }
 config.current_line_blame_formatter = '<author> • <author_time:%H:%M %m.%d.%Y> • <summary>'
 
-config.signcolumn = false
+config.signcolumn = true
 config.current_line_blame = false
 
 gitsigns.setup(config)

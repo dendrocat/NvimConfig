@@ -20,12 +20,12 @@ config.filters = {
 	git_ignored = false,
 }
 config.filters.custom = {
-	"^.git$",
-	"\\.meta$",
+	"^.git",
 }
 
-local unity_ignore = require("config.tree_ingores.unity")
-if unity_ignore.is_unity_project() then
+local util = require("config.util")
+if util.is_unity_project() then
+	local unity_ignore = require("config.tree_ingores.unity")
 	for _, pattern in ipairs(unity_ignore.patterns) do
 		table.insert(config.filters.custom, pattern)
 	end

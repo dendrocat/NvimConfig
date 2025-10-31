@@ -7,8 +7,11 @@ end
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+local lsps = {'clangd', 'pyright', 'lua_ls', 'omnisharp' }
 local configs = require("config.lsp_configs")
-for lsp, config in pairs(configs) do
+
+for _, lsp in ipairs(lsps) do
+	local config = configs[lsp] or {}
 	config.on_attach = on_attach
 	config.capabilities = capabilities
 
