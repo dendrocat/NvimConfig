@@ -1,4 +1,8 @@
-return {
+local config = {}
+config.clangd = {}
+config.pyright = {}
+
+config.lua_ls = {
 	settings = {
 		Lua = {
 			diagnostics = {
@@ -22,3 +26,18 @@ return {
 		}
 	}
 }
+
+config.omnisharp = {
+	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
+	settings = {
+		FormattingOptions = {
+			EnableEditorConfigSupport = false,
+			OrganizeImports = true,
+		},
+		Sdk = {
+			IncludePrereleases = true,
+		},
+	},
+}
+
+return config

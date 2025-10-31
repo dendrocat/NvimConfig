@@ -11,4 +11,4 @@ vim.keymap.set('n', ']d', function() jump(1) end, { desc = 'Next diagnostic' })
 
 
 --- Format
-vim.keymap.set('n', '<leader>F', function() vim.lsp.buf.format({ async = true }) end, { desc = 'Format file' })
+vim.keymap.set('n', '==', function() vim.lsp.buf.format({ async = true }) end, { desc = 'Format file' })

@@ -13,6 +13,7 @@ require("config.telescope")
 require("config.treesitter")
 require("config.indent_blankline")
 require("config.statusline")
+require("config.gitsigns")
 
 -- Tabs
 vim.opt.tabstop = 4
