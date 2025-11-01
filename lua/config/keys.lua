@@ -13,4 +13,4 @@ vim.keymap.set('n', ']d', function() jump(1) end, { desc = 'Next diagnostic' })
 vim.keymap.set('n', '==', function() vim.lsp.buf.format({ async = true }) end, { desc = 'Format file' })
 
 -- Settings
-vim.keymap.set('n', '<leader>s', ':tabe $MYVIMRC | cd %:p:h | split . | wincmd k | pwd<CR>', { desc = "Open settings" })
+vim.keymap.set('n', '<leader>s', ':e $MYVIMRC | cd %:p:h | split . | wincmd k | pwd<CR>', { desc = "Open settings" })
