@@ -6,15 +6,12 @@ local parsers = {
 	'markdown',
 }
 
-require('nvim-treesitter').install(parsers)
+local parser_install_dir = vim.fn.stdpath("data") .. "\\treesitter-parsers"
 
-vim.api.nvim_create_autocmd('FileType', {
-	callback = function()
-		local lang = vim.treesitter.language.get_lang(vim.bo.filetype)
-		if not vim.tbl_contains(parsers, lang) then
-			return
-		end
-		-- vim.notify("Treesitter включен для " .. ft)
-		vim.treesitter.start()
-	end
+vim.opt.runtimepath:prepend(parser_install_dir)
+require("nvim-treesitter.configs").setup({
+	ensure_installed = parsers,
+	auto_install = false,
+	highlight = { enable = true, },
+	parser_install_dir = parser_install_dir,
 })
