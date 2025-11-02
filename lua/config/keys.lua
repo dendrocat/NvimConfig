@@ -1,6 +1,7 @@
 -- Terminal
 vim.keymap.set('n', '<leader>t', ':tabnew<CR>:terminal<CR>i', { desc = 'Open terminal' })
 vim.keymap.set('t', '<C-n>', "<C-\\><C-n>", { desc = 'Exit terminal' })
+vim.keymap.set('t', '<Esc>', "<C-\\><C-n>", { desc = 'Exit terminal' })
 
 -- Diagnostic
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Show diagnostic' })
