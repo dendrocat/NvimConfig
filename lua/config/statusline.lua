@@ -7,6 +7,9 @@ local ViMode = require("config.heirline.vimode")
 local LSPActive = require("config.heirline.lspactive")
 local FileName = require("config.heirline.filename")
 local Git = require("config.heirline.git")
+local FileIcon = require("config.heirline.fileicon")
+local FileFlags = require("config.heirline.fileflags")
+local Diagnostic = require("config.heirline.diagnostic")
 
 local theme_colors = require("catppuccin.palettes").get_palette("macchiato")
 
@@ -37,20 +40,38 @@ local colors = {
 local Align = { provider = '%=', }
 local Space = { provider = ' ', }
 
-local separators = { left = "", right = "" }
+local separators = { left = "", right = "", fill = '█' }
 
 local function mode_color(self)
 	return self:mode_color()
 end
-Scroll = utils.surround({ separators.left, "" }, mode_color, { Ruler, Scrollbar })
 
-Git = utils.surround({ "", separators.right }, Git.hl.bg, Git)
+Scroll = utils.surround({ "", separators.fill }, mode_color, { Ruler, Space, Scrollbar })
+File = utils.surround({ "", separators.right }, FileName.hl.bg,
+	{ FileFlags, Space, FileName, Diagnostic })
+
+Git = utils.surround({ separators.left, separators.fill }, Git.hl.bg, Git)
 Git.condition = conditions.is_git_repo
 
 local DefualtStatusLine = {
 	ViMode,
 	{
 		provider = separators.right,
+		hl = function(self)
+			return { fg = mode_color(self), bg = File[2].hl(self).bg }
+		end,
+	},
+	File,
+	Align,
+	{
+		condition = conditions.lsp_attached,
+		FileIcon,
+		Space,
+		LSPActive,
+	},
+	Align, Git,
+	{
+		provider = separators.left,
 		hl = function(self)
 			local hl = { fg = mode_color(self), }
 			if conditions.is_git_repo() then
@@ -59,10 +80,6 @@ local DefualtStatusLine = {
 			return hl
 		end,
 	},
-	Git,
-	Align,
-	FileName,
-	Space,
 	Scroll
 }
 
@@ -74,7 +91,7 @@ local NvimTreeLine = {
 	end,
 	FileName,
 	Align,
-	Scrollbar,
+	{ provider = " "},
 }
 
 

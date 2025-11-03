@@ -26,7 +26,7 @@ vim.opt.smartindent = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Wrap  
+-- Wrap
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
