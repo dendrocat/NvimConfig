@@ -12,7 +12,6 @@ require("config.tree")
 require("config.telescope")
 require("config.treesitter")
 require("config.indent_blankline")
-require("config.statusline")
 require("config.gitsigns")
 require("config.vsnip")
 
@@ -34,3 +33,5 @@ vim.opt.breakindent = true
 
 -- Open tree
 vim.cmd [[NvimTreeOpen]]
+
+require("config.statusline")
