@@ -34,4 +34,4 @@ vim.opt.breakindent = true
 -- Open tree
 vim.cmd [[NvimTreeOpen]]
 
-require("config.statusline")
+require("config.heirline")
