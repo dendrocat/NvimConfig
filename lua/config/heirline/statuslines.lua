@@ -1,5 +1,5 @@
 local conditions = require("heirline.conditions")
-local utils = require("heirline.utils")
+local utils = require("utils")
 
 local Ruler = require("ruler")
 local Scrollbar = require("scrollbar")
@@ -9,21 +9,23 @@ local File = require("file")
 local Git = require("git")
 local Diagnostic = require("diagnostic")
 local Terminal = require("terminal")
+local base_providers = require("base_providers")
 
-local Align = { provider = '%=', }
-local Space = { provider = ' ', }
+local Align = base_providers.align
+local Space = base_providers.space
 
-local separators = { left = "", right = "", fill = '█' }
+local separators = base_providers.statusline_separators
+local fill_provider = '█'
 
 local function mode_color(self)
 	return self:mode_color()
 end
 
-Scroll = utils.surround({ "", separators.fill }, mode_color, { Ruler, Space, Scrollbar })
-FileBlock = utils.surround({ "", separators.right }, File.Name.hl.bg,
+Scroll = utils.surround({ "", "" }, mode_color, { Ruler, Space, Scrollbar })
+FileBlock = utils.surround({ "", separators.right }, "gray",
 	{ File.Flags, Space, File.Name, Diagnostic })
 
-Git = utils.surround({ separators.left, separators.fill }, Git.hl.bg, Git)
+Git = utils.surround({ separators.left, fill_provider }, Git.hl.bg, Git)
 Git.condition = conditions.is_git_repo
 
 local DefualtStatusLine = {
@@ -42,7 +44,8 @@ local DefualtStatusLine = {
 		Space,
 		LSPActive,
 	},
-	Align, Git,
+	Align,
+	File.Encoding, Space, File.Format, Space, Git,
 	{
 		provider = separators.left,
 		hl = function(self)
@@ -66,6 +69,11 @@ local InactiveStatusLine = {
 		end,
 	},
 	FileBlock,
+	Align,
+	File.Encoding,
+	Space,
+	File.Format,
+	Space
 }
 
 local TerminalStatusline = {
@@ -120,6 +128,7 @@ local StatusLines = {
 			local mode = conditions.is_active() and vim.fn.mode() or "n"
 			return self.mode_colors_map[mode]
 		end,
+		separators = { left = "", right = "" },
 	},
 	fallthrough = false,
 	NvimTreeLine,
@@ -127,4 +136,11 @@ local StatusLines = {
 	InactiveStatusLine,
 	DefualtStatusLine,
 }
+
+function StatusLines.set_separators(left_separator, right_separator)
+	separators = {
+		left = left_separator, right = right_separator
+	}
+end
+
 return StatusLines

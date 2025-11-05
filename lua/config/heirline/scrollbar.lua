@@ -9,7 +9,7 @@ local ScrollBar ={
         return string.rep(self.sbar[i], 2)
     end,
     hl = function (self)
-    	return { fg = self:mode_color(), bg = "bg" }
+    	return { fg = self:mode_color(), bg = "gray" }
     end
 }
 

@@ -13,7 +13,7 @@ local Git = {
 			null_check(self.status_dict.changed)
 	end,
 
-	hl = { fg = "orange", bg = "gray" },
+	hl = { fg = "fg", bg = "gray" },
 	update = { "BufEnter","TextChanged", "TextChangedI" },
 	{
 		provider = function(self)
@@ -44,7 +44,7 @@ local Git = {
 	},
 	{ -- git branch name
 		provider = function(self)
-			return " " .. self.status_dict.head
+			return self.status_dict.head .. " "
 		end,
 		hl = function(self) return { fg = self:mode_color(), bold = true } end
 	},

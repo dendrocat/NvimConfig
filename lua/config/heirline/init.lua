@@ -1,6 +1,6 @@
 package.path = vim.fn.stdpath("config") .. "/lua/config/heirline/?.lua;" .. package.path
 
-local utils = require("heirline.utils")
+local utils = require("utils")
 
 local theme_colors = require("catppuccin.palettes").get_palette("macchiato")
 
@@ -15,7 +15,7 @@ local colors = {
 	dark_red = utils.get_highlight('DiffDelete').bg,
 	green = theme_colors.green,
 	blue = theme_colors.blue,
-	gray = theme_colors.base,
+	gray = theme_colors.surface0,
 	orange = theme_colors.peach,
 	purple = theme_colors.mauve,
 	cyan = theme_colors.teal,
@@ -28,13 +28,12 @@ local colors = {
 	git_del = utils.get_highlight('GitSignsDelete').fg,
 }
 
-local StatusLines = require("statuslines")
-local Tablines = require("tablines")
-
 require('heirline').setup {
-	statusline = StatusLines,
-	tabline = Tablines,
+	statusline = require("statuslines"),
+	tabline = require("tablines"),
 	opts = {
 		colors = colors,
 	},
 }
+
+vim.opt.showtabline = 2
