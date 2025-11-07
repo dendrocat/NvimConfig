@@ -9,7 +9,7 @@ return {
 
 	-- Status + tab line	
 	{
-		'nvim-lualine/lualine.nvim',
+		'rebelot/heirline.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},
 

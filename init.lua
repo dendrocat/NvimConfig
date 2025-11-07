@@ -12,9 +12,9 @@ require("config.tree")
 require("config.telescope")
 require("config.treesitter")
 require("config.indent_blankline")
-require("config.statusline")
 require("config.gitsigns")
 require("config.vsnip")
+require("config.heirline")
 
 -- Tabs
 vim.opt.tabstop = 4
@@ -27,10 +27,11 @@ vim.opt.smartindent = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Wrap  
+-- Wrap
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
 
 -- Open tree
 vim.cmd [[NvimTreeOpen]]
+
