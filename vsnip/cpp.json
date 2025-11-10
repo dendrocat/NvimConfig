@@ -2,25 +2,11 @@
 	"General class": {
 		"prefix": "class",
 		"description": "Creates a starnard class.",
-		"body": [
-			"class $0 {",
-			"private:",
-			"\t",
-			"public:",
-			"\t",
-			"};"
-		]
+		"body": ["class $0 {", "private:", "\t", "public:", "\t", "};"]
 	},
 	"General struct": {
 		"prefix": "struct",
 		"description": "Creates a starnard struct.",
-		"body": [
-			"struct $0 {",
-			"private:",
-			"\t",
-			"public:",
-			"\t",
-			"};"
-		]
+		"body": ["struct $0 {", "private:", "\t", "public:", "\t", "};"]
 	}
 }

@@ -162,74 +162,42 @@
 	"MonoBehaviour Awake": {
 		"prefix": "Awake",
 		"description": "Awake is called when the script instance is being loaded.",
-		"body": [
-			"void Awake() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void Awake() {", "\t$0", "}"]
 	},
 	"MonoBehaviour FixedUpdate": {
 		"prefix": "FixedUpdate",
 		"description": "This function is called every fixed framerate frame, if the MonoBehaviour is enabled.",
-		"body": [
-			"void FixedUpdate() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void FixedUpdate() {", "\t$0", "}"]
 	},
 	"MonoBehaviour LateUpdate": {
 		"prefix": "LateUpdate",
 		"description": "LateUpdate is called every frame, if the Behaviour is enabled. It is called after all Update functions have been called.",
-		"body": [
-			"void LateUpdate() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void LateUpdate() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnAnimatorIK": {
 		"prefix": "OnAnimatorIK",
 		"description": "Callback for setting up animation IK (inverse kinematics).",
-		"body": [
-			"void OnAnimatorIK(int layerIndex) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnAnimatorIK(int layerIndex) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnAnimatorMove": {
 		"prefix": "OnAnimatorMove",
 		"description": "Callback for processing animation movements for modifying root motion.",
-		"body": [
-			"void OnAnimatorMove() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnAnimatorMove() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnApplicationFocus": {
 		"prefix": "OnApplicationFocus",
 		"description": "Callback sent to all game objects when the player gets or loses focus.",
-		"body": [
-			"void OnApplicationFocus(bool focusStatus) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnApplicationFocus(bool focusStatus) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnApplicationPause": {
 		"prefix": "OnApplicationPause",
 		"description": "Callback sent to all game objects when the player pauses.",
-		"body": [
-			"void OnApplicationPause(bool pauseStatus) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnApplicationPause(bool pauseStatus) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnApplicationQuit": {
 		"prefix": "OnApplicationQuit",
 		"description": "Callback sent to all game objects before the application is quit.",
-		"body": [
-			"void OnApplicationQuit() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnApplicationQuit() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnAudioFilterRead": {
 		"prefix": "OnAudioFilterRead",
@@ -243,83 +211,47 @@
 	"MonoBehaviour OnBecameInvisible": {
 		"prefix": "OnBecameInvisible",
 		"description": "OnBecameInvisible is called when the renderer is no longer visible by any camera.",
-		"body": [
-			"void OnBecameInvisible() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnBecameInvisible() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnBecameVisible": {
 		"prefix": "OnBecameVisible",
 		"description": "OnBecameVisible is called when the renderer became visible by any camera.",
-		"body": [
-			"void OnBecameVisible() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnBecameVisible() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnCollisionEnter": {
 		"prefix": "OnCollisionEnter",
 		"description": "OnCollisionEnter is called when this collider/rigidbody has begun\n touching another rigidbody/collider.",
-		"body": [
-			"void OnCollisionEnter(Collision other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnCollisionEnter(Collision other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnCollisionEnter2D": {
 		"prefix": "OnCollisionEnter2D",
 		"description": "Sent when an incoming collider makes contact with this object's collider (2D physics only).",
-		"body": [
-			"void OnCollisionEnter2D(Collision2D other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnCollisionEnter2D(Collision2D other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnCollisionExit": {
 		"prefix": "OnCollisionExit",
 		"description": "OnCollisionExit is called when this collider/rigidbody has stopped touching another rigidbody/collider.",
-		"body": [
-			"void OnCollisionExit(Collision other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnCollisionExit(Collision other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnCollisionExit2D": {
 		"prefix": "OnCollisionExit2D",
 		"description": "Sent when a collider on another object stops touching this object's collider (2D physics only).",
-		"body": [
-			"void OnCollisionExit2D(Collision2D other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnCollisionExit2D(Collision2D other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnCollisionStay": {
 		"prefix": "OnCollisionStay",
 		"description": "OnCollisionStay is called once per frame for every collider/rigidbody that is touching rigidbody/collider.",
-		"body": [
-			"void OnCollisionStay(Collision other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnCollisionStay(Collision other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnCollisionStay2D": {
 		"prefix": "OnCollisionStay2D",
 		"description": "Sent each frame where a collider on another object is touching this object's collider (2D physics only).",
-		"body": [
-			"void OnCollisionStay2D(Collision2D other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnCollisionStay2D(Collision2D other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnConnectedToServer": {
 		"prefix": "OnConnectedToServer",
 		"description": "Called on the client when you have successfully connected to a server.",
-		"body": [
-			"void OnConnectedToServer() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnConnectedToServer() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnControllerColliderHit": {
 		"prefix": "OnControllerColliderHit",
@@ -333,20 +265,12 @@
 	"MonoBehaviour OnDestroy": {
 		"prefix": "OnDestroy",
 		"description": "This function is called when the MonoBehaviour will be destroyed.",
-		"body": [
-			"void OnDestroy() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnDestroy() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnDisable": {
 		"prefix": "OnDisable",
 		"description": "This function is called when the behaviour becomes disabled or inactive.",
-		"body": [
-			"void OnDisable() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnDisable() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnDisconnectedFromServer": {
 		"prefix": "OnDisconnectedFromServer",
@@ -360,29 +284,17 @@
 	"MonoBehaviour OnDrawGizmos": {
 		"prefix": "OnDrawGizmos",
 		"description": "Callback to draw gizmos that are pickable and always drawn.",
-		"body": [
-			"void OnDrawGizmos() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnDrawGizmos() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnDrawGizmosSelected": {
 		"prefix": "OnDrawGizmosSelected",
 		"description": "Callback to draw gizmos only if the object is selected.",
-		"body": [
-			"void OnDrawGizmosSelected() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnDrawGizmosSelected() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnEnable": {
 		"prefix": "OnEnable",
 		"description": "This function is called when the object becomes enabled and active.",
-		"body": [
-			"void OnEnable() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnEnable() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnFailedToConnect": {
 		"prefix": "OnFailedToConnect",
@@ -405,29 +317,17 @@
 	"MonoBehaviour OnGUI": {
 		"prefix": "OnGUI",
 		"description": "OnGUI is called for rendering and handling GUI events.",
-		"body": [
-			"void OnGUI() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnGUI() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnJointBreak": {
 		"prefix": "OnJointBreak",
 		"description": "Called when a joint attached to the same game object broke.",
-		"body": [
-			"void OnJointBreak(float breakForce) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnJointBreak(float breakForce) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnJointBreak2D": {
 		"prefix": "OnJointBreak2D",
 		"description": "Called when a Joint2D attached to the same game object breaks.",
-		"body": [
-			"void OnJointBreak2D(Joint2D brokenJoint) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnJointBreak2D(Joint2D brokenJoint) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnMasterServerEvent": {
 		"prefix": "OnMasterServerEvent",
@@ -441,65 +341,37 @@
 	"MonoBehaviour OnMouseDown": {
 		"prefix": "OnMouseDown",
 		"description": "OnMouseDown is called when the user has pressed the mouse button while over the GUIElement or Collider.",
-		"body": [
-			"void OnMouseDown() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnMouseDown() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnMouseDrag": {
 		"prefix": "OnMouseDrag",
 		"description": "OnMouseDrag is called when the user has clicked on a GUIElement or Collider and is still holding down the mouse.",
-		"body": [
-			"void OnMouseDrag() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnMouseDrag() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnMouseEnter": {
 		"prefix": "OnMouseEnter",
 		"description": "Called when the mouse enters the GUIElement or Collider.",
-		"body": [
-			"void OnMouseEnter() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnMouseEnter() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnMouseExit": {
 		"prefix": "OnMouseExit",
 		"description": "Called when the mouse is not any longer over the GUIElement or Collider.",
-		"body": [
-			"void OnMouseExit() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnMouseExit() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnMouseOver": {
 		"prefix": "OnMouseOver",
 		"description": "Called every frame while the mouse is over the GUIElement or Collider.",
-		"body": [
-			"void OnMouseOver() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnMouseOver() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnMouseUp": {
 		"prefix": "OnMouseUp",
 		"description": "OnMouseUp is called when the user has released the mouse button.",
-		"body": [
-			"void OnMouseUp() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnMouseUp() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnMouseUpAsButton": {
 		"prefix": "OnMouseUpAsButton",
 		"description": "OnMouseUpAsButton is only called when the mouse is released over the same GUIElement or Collider as it was pressed.",
-		"body": [
-			"void OnMouseUpAsButton() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnMouseUpAsButton() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnNetworkInstantiate": {
 		"prefix": "OnNetworkInstantiate",
@@ -513,74 +385,42 @@
 	"MonoBehaviour OnParticleCollision": {
 		"prefix": "OnParticleCollision",
 		"description": "OnParticleCollision is called when a particle hits a collider.",
-		"body": [
-			"void OnParticleCollision(GameObject other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnParticleCollision(GameObject other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnParticleSystemStopped": {
 		"prefix": "OnParticleSystemStopped",
 		"description": "OnParticleSystemStopped is called when all particles in the system have died, and no new particles will be born. New particles cease to be created either after Stop is called, or when the duration property of a non-looping system has been exceeded.",
-		"body": [
-			"void OnParticleSystemStopped() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnParticleSystemStopped() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnParticleTrigger": {
 		"prefix": "OnParticleTrigger",
 		"description": "OnParticleTrigger is called when any particles in a particle system meet the conditions in the trigger module.",
-		"body": [
-			"void OnParticleTrigger() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnParticleTrigger() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnPlayerConnected": {
 		"prefix": "OnPlayerConnected",
 		"description": "Called on the server whenever a new player has successfully connected.",
-		"body": [
-			"void OnPlayerConnected(NetworkPlayer player) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnPlayerConnected(NetworkPlayer player) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnPlayerDisconnected": {
 		"prefix": "OnPlayerDisconnected",
 		"description": "Called on the server whenever a player disconnected from the server.",
-		"body": [
-			"void OnPlayerDisconnected(NetworkPlayer player) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnPlayerDisconnected(NetworkPlayer player) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnPostRender": {
 		"prefix": "OnPostRender",
 		"description": "OnPostRender is called after a camera finishes rendering the scene.",
-		"body": [
-			"void OnPostRender() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnPostRender() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnPreCull": {
 		"prefix": "OnPreCull",
 		"description": "OnPreCull is called before a camera culls the scene.",
-		"body": [
-			"void OnPreCull() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnPreCull() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnPreRender": {
 		"prefix": "OnPreRender",
 		"description": "OnPreRender is called before a camera starts rendering the scene.",
-		"body": [
-			"void OnPreRender() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnPreRender() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnRenderImage": {
 		"prefix": "OnRenderImage",
@@ -594,11 +434,7 @@
 	"MonoBehaviour OnRenderObject": {
 		"prefix": "OnRenderObject",
 		"description": "OnRenderObject is called after camera has rendered the scene.",
-		"body": [
-			"void OnRenderObject() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnRenderObject() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnSerializeNetworkView": {
 		"prefix": "OnSerializeNetworkView",
@@ -612,128 +448,72 @@
 	"MonoBehaviour OnServerInitialized": {
 		"prefix": "OnServerInitialized",
 		"description": "Called on the server whenever a Network.InitializeServer was invoked and has completed.",
-		"body": [
-			"void OnServerInitialized() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnServerInitialized() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTransformChildrenChanged": {
 		"prefix": "OnTransformChildrenChanged",
 		"description": "Called when the list of children of the transform of the GameObject has changed.",
-		"body": [
-			"void OnTransformChildrenChanged() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTransformChildrenChanged() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTransformParentChanged": {
 		"prefix": "OnTransformParentChanged",
 		"description": "Called when the parent property of the transform of the GameObject has changed.",
-		"body": [
-			"void OnTransformParentChanged() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTransformParentChanged() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTriggerEnter": {
 		"prefix": "OnTriggerEnter",
 		"description": "OnTriggerEnter is called when the Collider other enters the trigger.",
-		"body": [
-			"void OnTriggerEnter(Collider other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTriggerEnter(Collider other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTriggerEnter2D": {
 		"prefix": "OnTriggerEnter2D",
 		"description": "Sent when another object enters a trigger collider attached to this object (2D physics only).",
-		"body": [
-			"void OnTriggerEnter2D(Collider2D other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTriggerEnter2D(Collider2D other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTriggerExit": {
 		"prefix": "OnTriggerExit",
 		"description": "OnTriggerExit is called when the Collider other has stopped touching the trigger.",
-		"body": [
-			"void OnTriggerExit(Collider other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTriggerExit(Collider other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTriggerExit2D": {
 		"prefix": "OnTriggerExit2D",
 		"description": "Sent when another object leaves a trigger collider attached to this object (2D physics only).",
-		"body": [
-			"void OnTriggerExit2D(Collider2D other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTriggerExit2D(Collider2D other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTriggerStay": {
 		"prefix": "OnTriggerStay",
 		"description": "OnTriggerStay is called once per frame for every Collider other that is touching the trigger.",
-		"body": [
-			"void OnTriggerStay(Collider other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTriggerStay(Collider other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnTriggerStay2D": {
 		"prefix": "OnTriggerStay2D",
 		"description": "Sent each frame where another object is within a trigger collider attached to this object (2D physics only).",
-		"body": [
-			"void OnTriggerStay2D(Collider2D other) {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnTriggerStay2D(Collider2D other) {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnValidate": {
 		"prefix": "OnValidate",
 		"description": "Called when the script is loaded or a value is changed in the inspector (Called in the editor only).",
-		"body": [
-			"void OnValidate() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnValidate() {", "\t$0", "}"]
 	},
 	"MonoBehaviour OnWillRenderObject": {
 		"prefix": "OnWillRenderObject",
 		"description": "OnWillRenderObject is called for each camera if the object is visible.",
-		"body": [
-			"void OnWillRenderObject() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnWillRenderObject() {", "\t$0", "}"]
 	},
 	"MonoBehaviour Reset": {
 		"prefix": "Reset",
 		"description": "Reset is called when the user hits the Reset button in the Inspector's context menu or when adding the component the first time.",
-		"body": [
-			"void Reset() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void Reset() {", "\t$0", "}"]
 	},
 	"MonoBehaviour Start": {
 		"prefix": "Start",
 		"description": "Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.",
-		"body": [
-			"void Start() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void Start() {", "\t$0", "}"]
 	},
 	"MonoBehaviour Update": {
 		"prefix": "Update",
 		"description": "Update is called every frame, if the MonoBehaviour is enabled.",
-		"body": [
-			"void Update() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void Update() {", "\t$0", "}"]
 	},
 	"StateMachineBehaviour OnStateEnter": {
 		"prefix": "OnStateEnter",
@@ -783,92 +563,52 @@
 	"Editor OnSceneGUI": {
 		"prefix": "OnSceneGUI",
 		"description": "Enables the Editor to handle an event in the scene view.",
-		"body": [
-			"void OnSceneGUI() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnSceneGUI() {", "\t$0", "}"]
 	},
 	"EditorWindow OnFocus": {
 		"prefix": "OnFocus",
 		"description": "Called when the window gets keyboard focus.",
-		"body": [
-			"void OnFocus() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnFocus() {", "\t$0", "}"]
 	},
 	"EditorWindow OnHierarchyChange": {
 		"prefix": "OnHierarchyChange",
 		"description": "Handler for message that is sent when an object or group of objects in the hierarchy changes.",
-		"body": [
-			"void OnHierarchyChange() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnHierarchyChange() {", "\t$0", "}"]
 	},
 	"EditorWindow OnInspectorUpdate": {
 		"prefix": "OnInspectorUpdate",
 		"description": "OnInspectorUpdate is called at 10 frames per second to give the inspector a chance to update.",
-		"body": [
-			"void OnInspectorUpdate() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnInspectorUpdate() {", "\t$0", "}"]
 	},
 	"EditorWindow OnLostFocus": {
 		"prefix": "OnLostFocus",
 		"description": "Called when the window loses keyboard focus.",
-		"body": [
-			"void OnLostFocus() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnLostFocus() {", "\t$0", "}"]
 	},
 	"EditorWindow OnProjectChange": {
 		"prefix": "OnProjectChange",
 		"description": "Handler for message that is sent whenever the state of the project changes.",
-		"body": [
-			"void OnProjectChange() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnProjectChange() {", "\t$0", "}"]
 	},
 	"EditorWindow OnSelectionChange": {
 		"prefix": "OnSelectionChange",
 		"description": "Called whenever the selection has changed.",
-		"body": [
-			"void OnSelectionChange() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnSelectionChange() {", "\t$0", "}"]
 	},
 	"ScriptableWizard OnWizardCreate": {
 		"prefix": "OnWizardCreate",
 		"description": "This is called when the user clicks on the Create button.",
-		"body": [
-			"void OnWizardCreate() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnWizardCreate() {", "\t$0", "}"]
 	},
 	"ScriptableWizard OnWizardOtherButton": {
 		"prefix": "OnWizardOtherButton",
 		"description": "Allows you to provide an action when the user clicks on the other button.",
-		"body": [
-			"void OnWizardOtherButton() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnWizardOtherButton() {", "\t$0", "}"]
 	},
 	"ScriptableWizard OnWizardUpdate": {
 		"prefix": "OnWizardUpdate",
 		"description": "This is called when the wizard is opened or whenever the user changes something in the wizard.",
-		"body": [
-			"void OnWizardUpdate() {",
-			"\t$0",
-			"}"
-		]
+		"body": ["void OnWizardUpdate() {", "\t$0", "}"]
 	},
 	"Debug Log": {
 		"prefix": "Log",
@@ -917,16 +657,12 @@
 	},
 	"Attribute: SerializeField": {
 		"prefix": "SerializeField",
-		"body": [
-			"[SerializeField] $0;"
-		],
+		"body": ["[SerializeField] $0;"],
 		"description": "Force Unity to serialize a private field."
 	},
 	"MonoBehaviour RequireComponent": {
 		"prefix": "RequireComponent",
-		"body": [
-			"[RequireComponent(typeof($0))]"
-		],
+		"body": ["[RequireComponent(typeof($0))]"],
 		"description": "Automatically adds required components as dependencies."
 	}
 }

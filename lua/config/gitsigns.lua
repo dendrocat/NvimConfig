@@ -47,3 +47,4 @@ vim.keymap.set('n', '<leader>gb', gitsigns.toggle_current_line_blame, { desc = "
 vim.cmd('highlight GitSignsAdd guifg=#74be74')
 vim.cmd('highlight GitSignsChange guifg=#ebc170')
 vim.cmd('highlight GitSignsDelete guifg=#ff4772')
+
