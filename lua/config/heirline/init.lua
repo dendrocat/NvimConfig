@@ -30,7 +30,7 @@ local colors = {
 
 require('heirline').setup {
 	statusline = require("statuslines"),
-	tabline = require("tablines"),
+	tabline = require("tabline"),
 	opts = {
 		colors = colors,
 	},

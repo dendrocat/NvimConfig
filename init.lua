@@ -15,6 +15,7 @@ require("config.indent_blankline")
 require("config.gitsigns")
 require("config.vsnip")
 require("config.heirline")
+require("config.formatter")
 
 -- Tabs
 vim.opt.tabstop = 4
@@ -35,6 +36,4 @@ vim.opt.breakindent = true
 
 -- Open tree
 vim.cmd [[NvimTreeOpen]]
-
-require("config.formatter")
 
