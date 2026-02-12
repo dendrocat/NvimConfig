@@ -25,7 +25,7 @@ config.lua_ls = {
 }
 
 config.omnisharp = {
-	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
+	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()), "--project-synchronization-timeout=20" },
 	settings = {
 		FormattingOptions = {
 			EnableEditorConfigSupport = false,
@@ -33,6 +33,17 @@ config.omnisharp = {
 		},
 		Sdk = {
 			IncludePrereleases = true,
+		},
+		RoslynExtensionsOptions = {
+			EnableAnalyzersSupport = false,
+			EnableEditorConfigSupport = false,
+			EnableDecompilationSupport = true,
+			EnableImportCompletion = true,
+		},
+		OmniSharp = {
+			EnableAsyncCompletion = true,
+			EnableEditorVisualizerSupport = true,
+			EnableRoslynAnalyzers = false,
 		},
 	},
 }
