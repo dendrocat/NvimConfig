@@ -14,7 +14,8 @@ return {
 	},
 
 	-- Indent lines
-	{
-		"lukas-reineke/indent-blankline.nvim",
-	}
+	{ "lukas-reineke/indent-blankline.nvim" },
+
+	-- Git signs
+	{ "lewis6991/gitsigns.nvim" },
 }

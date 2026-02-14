@@ -14,4 +14,3 @@ vim.keymap.set('n', ']d', function() jump(1) end, { desc = 'Next diagnostic' })
 
 -- Settings
 vim.keymap.set('n', '<leader>s', ':e $MYVIMRC | cd %:p:h | split . | wincmd k | pwd<CR>', { desc = "Open settings" })
-
