@@ -14,3 +14,14 @@ vim.keymap.set('n', ']d', function() jump(1) end, { desc = 'Next diagnostic' })
 
 -- Settings
 vim.keymap.set('n', '<leader>s', ':e $MYVIMRC | cd %:p:h | split . | wincmd k | pwd<CR>', { desc = "Open settings" })
+
+vim.keymap.set('n', '<leader>bd',
+	function()
+		for _, buf in ipairs(vim.fn.getbufinfo({ buflisted = 1 })) do
+			if (buf.changed == 0) then
+				vim.cmd('silent! bd! ' .. buf.bufnr)
+			end
+		end
+	end,
+	{ desc = "Buffer: all safe delete" }
+)
