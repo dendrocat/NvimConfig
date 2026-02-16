@@ -1,9 +1,11 @@
 local parsers = {
-	'c', 'cpp', 'c_sharp', 'lua', 'javascript', 'python', 'typescript',
+	'c', 'cpp', 'c_sharp', 'lua', 'python',
+	'css', 'javascript', 'typescript',
 	'gitignore', 'gitattributes',
 	'json', 'xml', 'yaml',
 	'regex',
 	'markdown',
+	'sql',
 }
 
 local parser_install_dir = vim.fn.stdpath("data") .. "\\treesitter-parsers"
