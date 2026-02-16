@@ -5,7 +5,18 @@ local config = {}
 config.auto_integrations = true
 
 config.styles = {
-	keywords = { 'italic' },
+	comments = { "italic" },
+	conditionals = { "italic" },
+	loops = { "italic" },
+	functions = { "italic" },
+	keywords = { "italic" },
+	strings = {},
+	variables = {},
+	numbers = {},
+	booleans = { "italic" },
+	properties = {},
+	types = {},
+	operators = {},
 }
 
 config.custom_highlights = {
