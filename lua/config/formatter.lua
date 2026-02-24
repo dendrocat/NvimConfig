@@ -32,6 +32,10 @@ config.formatters.xmlformatter = {
 	command = "xmlformat",
 	args = { "--indent", "4", "$FILENAME" },
 }
+config.formatters.black = {
+	command = "black",
+	stdin = true,
+}
 config.formatters['*'] = {}
 
 config.formatters_by_ft = {
@@ -42,6 +46,7 @@ config.formatters_by_ft = {
 	html = { 'prettier' },
 	markdown = { 'prettier' },
 	xml = { 'xmlformatter' },
+	python = { 'black' },
 }
 
 config.default_format_opts = {
@@ -65,4 +70,3 @@ vim.keymap.set('n', '==', function()
 		end
 	end)
 end, { desc = "Format file" })
-
