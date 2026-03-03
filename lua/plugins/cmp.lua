@@ -1,14 +1,7 @@
 return {
 	{
 		"mason-org/mason.nvim",
-		opts = {
-			ensure_installed = {
-				"clangd", -- C++
-				"pyright", -- Python
-				"lua_ls", -- Lua
-				"omnisharp" -- C#
-			}
-		}
+		opts = {}
 	},
 	{
 		'neovim/nvim-lspconfig',

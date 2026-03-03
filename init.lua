@@ -33,7 +33,3 @@ vim.opt.relativenumber = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
-
--- Open tree
-vim.cmd [[NvimTreeOpen]]
-

@@ -46,6 +46,14 @@ vim.keymap.set('n', '<leader>e', function()
 	end
 end, { desc = 'Tree toggle' })
 
+local function open_tree()
+	api.tree.open()
+	if vim.fn.argc() > 0 then
+		vim.cmd [[wincmd p]]
+	end
+end
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_tree })
+
 vim.cmd('highlight NvimTreeGitNew guifg=#74be74')
 vim.cmd('highlight NvimTreeGitDirty guifg=#ebc170')
 vim.cmd('highlight NvimTreeGitDeleted guifg=#ff033e')
