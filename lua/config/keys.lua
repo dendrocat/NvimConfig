@@ -16,8 +16,9 @@ vim.keymap.set('n', ']d', function() jump(1) end, { desc = 'Next diagnostic' })
 vim.keymap.set('n', '<leader>s', ':e $MYVIMRC | cd %:p:h | split . | wincmd k | pwd<CR>', { desc = "Open settings" })
 
 vim.keymap.set('n', '<leader>bd', function()
+	local bufs = vim.api.nvim_list_bufs()
 	-- Check for modified buffers
-	for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+	for _, buf in ipairs(bufs) do
 		if vim.api.nvim_buf_is_valid(buf)
 			and vim.api.nvim_get_option_value('modified', { buf = buf })
 			and vim.api.nvim_get_option_value('buflisted', { buf = buf }) then
@@ -28,9 +29,11 @@ vim.keymap.set('n', '<leader>bd', function()
 
 	vim.cmd [[NvimTreeClose]]
 
-	-- if current buffer isn't [No Name]
-	if vim.fn.expand("%:p"):len() > 0 then
-		vim.cmd [[%bd|e#|bd#]] -- delete all buffers
+	local cur_buf = vim.api.nvim_get_current_buf()
+	for _, buf in ipairs(bufs) do
+		if buf ~= cur_buf then
+			pcall(vim.api.nvim_buf_delete, buf, { force = true })
+		end
 	end
 
 	vim.cmd [[NvimTreeFocus]]
