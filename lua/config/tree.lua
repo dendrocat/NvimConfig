@@ -22,6 +22,7 @@ config.filters = {
 config.filters.custom = {
 	"^.git",
 }
+config.update_cwd = true
 
 local util = require("config.util")
 if util.is_unity_project() then

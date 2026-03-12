@@ -1,4 +1,11 @@
 local config = {}
+
+config.clangd = {
+	init_options = {
+		fallbackFlags = { "-std=c++23" },
+	},
+}
+
 config.lua_ls = {
 	settings = {
 		Lua = {

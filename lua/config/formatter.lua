@@ -36,6 +36,10 @@ config.formatters.black = {
 	command = "black",
 	stdin = true,
 }
+config.formatters.clang_format = {
+	args = { "--style={BasedOnStyle: LLVM, UseTab: Always, TabWidth: 4, IndentWidth: 4}" },
+	stdin = true,
+}
 config.formatters['*'] = {}
 
 config.formatters_by_ft = {
@@ -47,6 +51,10 @@ config.formatters_by_ft = {
 	markdown = { 'prettier' },
 	xml = { 'xmlformatter' },
 	python = { 'black' },
+	cpp = { "clang_format" },
+	c = { "clang_format" },
+	h = { "clang_format" },
+	hpp = { "clang_format" }
 }
 
 config.default_format_opts = {
