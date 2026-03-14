@@ -18,4 +18,7 @@ return {
 
 	-- Git signs
 	{ "lewis6991/gitsigns.nvim" },
+
+	-- Notify
+	{ "rcarriga/nvim-notify" }
 }
