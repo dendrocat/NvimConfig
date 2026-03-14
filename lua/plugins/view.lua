@@ -20,5 +20,5 @@ return {
 	{ "lewis6991/gitsigns.nvim" },
 
 	-- Notify
-	{ "rcarriga/nvim-notify" }
+	{ "j-hui/fidget.nvim" }
 }
