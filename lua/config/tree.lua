@@ -23,6 +23,9 @@ config.filters.custom = {
 	"^.git",
 }
 config.update_cwd = true
+config.git = {
+	timeout = 1000
+}
 
 local util = require("config.util")
 if util.is_unity_project() then
