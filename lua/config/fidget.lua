@@ -1,5 +1,3 @@
-local fid = require("fidget")
-
 local config = {}
 config.notification = {
 	override_vim_notify = true,
@@ -11,7 +9,8 @@ config.notification.view = {
 config.notification.window = {
 	normal_hl = "DiagnosticInfo",
 	align = "top",
-	border = "rounded"
+	border = "rounded",
+	winblend = 0,
 }
 
-fid.setup(config)
+require("fidget").setup(config)

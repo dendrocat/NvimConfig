@@ -19,6 +19,6 @@ return {
 	-- Git signs
 	{ "lewis6991/gitsigns.nvim" },
 
-	-- Notify
+	-- Notifications
 	{ "j-hui/fidget.nvim" }
 }
