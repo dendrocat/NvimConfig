@@ -32,7 +32,8 @@ config.lua_ls = {
 }
 
 config.omnisharp = {
-	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()), "--project-synchronization-timeout=20" },
+	cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()),
+		"-z", "--loglevel", "error" },
 	settings = {
 		FormattingOptions = {
 			EnableEditorConfigSupport = false,

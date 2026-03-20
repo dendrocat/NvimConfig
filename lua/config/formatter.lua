@@ -69,12 +69,14 @@ config.notify_no_formatters = true
 local conform = require("conform")
 conform.setup(config)
 vim.keymap.set('n', '==', function()
-	conform.format({ async = true }, function(err, _)
+	conform.format({ async = true }, function(err, did_edit)
 		local filename = vim.fn.expand("%:t")
 		if err ~= nil then
 			vim.notify(err, vim.log.levels.ERROR)
-		else
+		elseif did_edit then
 			vim.notify(filename .. " has been successfully formatted", vim.log.levels.INFO)
+		else
+			vim.notify(filename .. " has already been formatted", vim.log.levels.INFO);
 		end
 	end)
 end, { desc = "Format file" })

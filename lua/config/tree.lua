@@ -22,7 +22,7 @@ config.filters = {
 config.filters.custom = {
 	"^.git",
 }
-config.update_cwd = true
+config.sync_root_with_cwd = true
 config.git = {
 	timeout = 1000
 }
