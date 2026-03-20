@@ -18,4 +18,7 @@ return {
 
 	-- Git signs
 	{ "lewis6991/gitsigns.nvim" },
+
+	-- Notifications
+	{ "j-hui/fidget.nvim" }
 }
