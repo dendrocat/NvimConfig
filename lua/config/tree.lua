@@ -20,11 +20,11 @@ config.filters = {
 	git_ignored = false,
 }
 config.filters.custom = {
-	"^.git",
+	"^\\.git$",
 }
 config.sync_root_with_cwd = true
 config.git = {
-	timeout = 1000
+	timeout = 1000,
 }
 
 local util = require("config.util")
