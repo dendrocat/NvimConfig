@@ -11,6 +11,7 @@ config.notification.window = {
 	align = "top",
 	border = "rounded",
 	winblend = 0,
+	max_width = 100,
 }
 
 require("fidget").setup(config)
