@@ -5,6 +5,7 @@ require("config.lazy")
 require("config.theme")
 
 -- Plugins
+require("config.mason")
 require("config.cmp")
 require("config.lsp")
 require("config.keys")
