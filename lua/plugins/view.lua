@@ -7,10 +7,14 @@ return {
 		name = "catppuccin",
 	},
 
+	-- Icons
+	{ 'nvim-tree/nvim-web-devicons', },
+
 	-- Status + tab line	
 	{
 		'rebelot/heirline.nvim',
-		dependencies = { 'nvim-tree/nvim-web-devicons' }
+		"nvim-lualine/lualine.nvim",
+		dependencies = {}
 	},
 
 	-- Indent lines
