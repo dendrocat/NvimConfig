@@ -31,5 +31,9 @@ file.flags.modified = {
 	color = "lualine_b_insert",
 	cond = function() return vim.bo.modified end,
 }
-
+file.flags.modified_inactive = {
+	function() return "[+]" end,
+	color = "lualine_y_diff_added_inactive",
+	cond = function() return vim.bo.modified end,
+}
 return file
