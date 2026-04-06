@@ -1,21 +1,12 @@
 return {
-	-- Themes
-	{ "folke/tokyonight.nvim", },
-	{ "EdenEast/nightfox.nvim", },
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-	},
+	-- Theme
+	{ "catppuccin/nvim", name = "catppuccin", },
 
 	-- Icons
 	{ 'nvim-tree/nvim-web-devicons', },
 
 	-- Status + tab line	
-	{
-		'rebelot/heirline.nvim',
-		"nvim-lualine/lualine.nvim",
-		dependencies = {}
-	},
+	{ "nvim-lualine/lualine.nvim", },
 
 	-- Indent lines
 	{ "lukas-reineke/indent-blankline.nvim" },
