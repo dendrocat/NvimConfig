@@ -15,5 +15,8 @@ return {
 	{ "lewis6991/gitsigns.nvim" },
 
 	-- Notifications
-	{ "j-hui/fidget.nvim" }
+	{ "j-hui/fidget.nvim" },
+
+	-- Highlights
+	{ "brenoprata10/nvim-highlight-colors", },
 }
