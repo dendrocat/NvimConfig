@@ -1,4 +1,7 @@
 local config = {}
+config.progress = {
+	ignore = { "pyright", },
+}
 config.notification = {
 	override_vim_notify = true,
 }
