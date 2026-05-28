@@ -1,6 +1,7 @@
 local config = {}
 
 config.clangd = {
+	cmd = { "clangd", "--clang-tidy", },
 	init_options = {
 		fallbackFlags = { "-std=c++23" },
 	},

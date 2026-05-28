@@ -11,6 +11,7 @@ vim.opt.expandtab = false
 -- Number
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.cursorline = true
 
 -- Wrap
 vim.opt.wrap = true
